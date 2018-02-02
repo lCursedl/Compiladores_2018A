@@ -1,0 +1,11 @@
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\bin\Debug\Compiladores_UI.exe.config
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\bin\Debug\Compiladores_UI.exe
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\bin\Debug\Compiladores_UI.pdb
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.csprojResolveAssemblyReference.cache
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.MainWindow.resources
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.Properties.Resources.resources
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.csproj.GenerateResource.Cache
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.exe
+c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\obj\Debug\Compiladores_UI.pdb
+C:\Users\Gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\bin\Debug\Compiladores_Project.dll
+C:\Users\Gustavo\documents\visual studio 2015\Projects\Compiladores_UI\Compiladores_UI\bin\Debug\Compiladores_Project.pdb
