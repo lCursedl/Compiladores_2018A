@@ -1,11 +1,6 @@
 #include "stdafx.h"
 #include "Token.h"
 
-
-CToken::CToken(std::string lex, TYPE_TOKEN type, int NumLine)
-{
-}
-
 std::string Compiladores_Project::CToken::getTypeStr()
 {
 	std::string typeStr = "";

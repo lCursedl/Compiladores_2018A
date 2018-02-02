@@ -80,10 +80,10 @@ cli::array<String^>^ Compiladores_Project::Manager::GetCompilationDetails()
 		CDetails[0] = String::Format("Compilation phase \tLine number \tDescription \t\t\tLine");
 		CDetails[1] = String::Format("--------------------------------------------------------");
 
-		//cli::array<String^>^AllErrors = MError->Errors;
+		cli::array<String^>^AllErrors = MError->Errors;
 		for (int i = 2; i < numErrorLines; i++)
 		{
-			//CDetails[i] = AllErrors[i - 2];
+			CDetails[i] = AllErrors[i - 2];
 		}
 
 		CDetails[numErrorLines - 1] = String::Format("Compile: Failed, MError->NumErrors");

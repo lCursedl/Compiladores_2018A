@@ -29,7 +29,8 @@ namespace Compiladores_Project
 		TYPE_TOKEN m_Type;
 		int m_NumLine;
 	public:
-		CToken(std::string lex, TYPE_TOKEN type, int NumLine);
+		CToken(std::string lex, TYPE_TOKEN type, int NumLine)
+		{}
 
 		std::string getLex() const { return m_Lex; }
 		std::string getTypeStr();

@@ -1,7 +1,8 @@
 ﻿  Compiladores_Project.cpp
-  ErrorModule.cpp
+Compiladores_Project.cpp(51): warning C4101: 'AllTokens': unreferenced local variable
   Lexico.cpp
+Lexico.cpp(116): error C2039: 'addError': is not a member of 'Compiladores_Project::CErrorModule'
+  c:\users\gustavo\documents\visual studio 2015\projects\compiladores_2018a\compiladores_project\compiladores_project\ErrorModule.h(19): note: see declaration of 'Compiladores_Project::CErrorModule'
+  Token.cpp
   Generating Code...
-  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
-  Compiladores_Project.vcxproj -> c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_Project\Debug\Compiladores_Project.dll
-  Compiladores_Project.vcxproj -> c:\users\gustavo\documents\visual studio 2015\Projects\Compiladores_Project\Debug\Compiladores_Project.pdb (Partial PDB)
+c:\users\gustavo\documents\visual studio 2015\projects\compiladores_2018a\compiladores_project\compiladores_project\compiladores_project.cpp(59): error C4716: 'Compiladores_Project::Manager::GetAllTokens': must return a value
