@@ -11,7 +11,22 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 	hash=None, flags=None
 Class Compiladores_Project.CErrorModule: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String[] Errors 'get ' : 
+    Int32 MaxErrors 'get ' : 
+    Int32 NumErrors 'get ' : 
+  Methods:
+    ClearErrors(): PrivateScope, Public, HideBySig
+    AddError(ERROR_PHASE, Int32, String, String): PrivateScope, Public, HideBySig
+    get_NumErrors(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxErrors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Errors(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
 Struct Compiladores_Project.CLexico: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct Compiladores_Project.CSintactico: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
   :System.ValueType
 Class Compiladores_Project.Manager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -19,4 +34,15 @@ Class Compiladores_Project.Manager: AutoLayout, AnsiClass, Class, Public, Before
     System.IDisposable
   Methods:
     Compile(String): PrivateScope, Public, HideBySig
+    GetAllTokens(): PrivateScope, Public, HideBySig
+    GetCompilationDetails(): PrivateScope, Public, HideBySig
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct Compiladores_Project.ERROR_PHASE: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Compiladores_Project.ERROR_PHASE GLOBAL = 0 : Public, Static, Literal, HasDefault
+    Compiladores_Project.ERROR_PHASE LEX_ANALYZER = 1 : Public, Static, Literal, HasDefault
+    Compiladores_Project.ERROR_PHASE SYN_ANALYZER = 2 : Public, Static, Literal, HasDefault
+    Compiladores_Project.ERROR_PHASE SEM_ANALYZER = 3 : Public, Static, Literal, HasDefault
+    Compiladores_Project.ERROR_PHASE CODE_GENERATION = 4 : Public, Static, Literal, HasDefault

@@ -96,7 +96,10 @@ bool Compiladores_Project::CLexico::ParseCode(const char * src)
 		default:
 			break;
 		}
+
 	}
+
+	return false;
 }
 
 void Compiladores_Project::CLexico::getTokens(std::vector<CToken *> *tokensVec) const
@@ -113,7 +116,7 @@ void Compiladores_Project::CLexico::addError(int lineNum, const char * desc, con
 {
 	String ^ strDesc = gcnew String(desc);
 	String ^ strLine = gcnew String(line);
-	managedRef_errorsModule->addError(Compiladores_Project::ERROR_PHASE::LEX_ANALYZER, lineNum, strDesc, strLine);
+	managedRef_errorsModule->AddError(Compiladores_Project::ERROR_PHASE::LEX_ANALYZER, lineNum, strDesc, strLine);
 	m_Succeeded = false;
 }
 

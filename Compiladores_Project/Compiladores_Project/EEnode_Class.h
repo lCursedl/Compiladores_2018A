@@ -1,0 +1,11 @@
+#pragma once
+
+enum ENODE_CLASS
+{
+	UNDEFINED = 0,
+	GLOBAL_VAR,
+	PROCDR,
+	FUNC,
+	PARAM,
+	LOCAL_VAR
+};

@@ -133,23 +133,34 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Compiladores_Project.h" />
+    <ClInclude Include="EEnode_Class.h" />
     <ClInclude Include="ErrorModule.h" />
+    <ClInclude Include="GlobalNode.h" />
     <ClInclude Include="Lexico.h" />
+    <ClInclude Include="LocalNode.h" />
+    <ClInclude Include="NodeVal.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Sintactico.h" />
     <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="SymTab.h" />
     <ClInclude Include="Token.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Compiladores_Project.cpp" />
     <ClCompile Include="ErrorModule.cpp" />
+    <ClCompile Include="GlobalNode.cpp" />
     <ClCompile Include="Lexico.cpp" />
+    <ClCompile Include="LocalNode.cpp" />
+    <ClCompile Include="NodeVal.cpp" />
+    <ClCompile Include="Sintactico.cpp" />
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SymTab.cpp" />
     <ClCompile Include="Token.cpp" />
   </ItemGroup>
   <ItemGroup>

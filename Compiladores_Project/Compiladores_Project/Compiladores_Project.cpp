@@ -1,7 +1,6 @@
 // This is the main DLL file.
 
 #include "stdafx.h"
-
 #include "Compiladores_Project.h"
 
 using namespace Compiladores_Project;
@@ -10,11 +9,15 @@ Manager::Manager()
 {
 	MError = gcnew CErrorModule();
 	Lex = new CLexico(MError);
+	Syn = new CSintactico(MError);
+	Symtab = new CSymTab();
 }
 
 Manager::~Manager()
 {
 	delete Lex;
+	delete Syn;
+	delete Symtab;
 }
 
 cli::array<String^>^ Compiladores_Project::Manager::Compile(String ^ program)
@@ -40,6 +43,12 @@ cli::array<String^>^ Compiladores_Project::Manager::Compile(String ^ program)
 			CompilationDetails[0] = gcnew String("Error on Lex Analyzer");
 			return CompilationDetails;
 		}
+		else if (!Syn)
+		{
+			CompilationDetails = gcnew cli::array<String^>(1);
+			CompilationDetails[0] = gcnew String("Error on Syn Analizer");
+			return CompilationDetails;
+		}
 	}	
 
 	Lex->ParseCode((const char *)System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(program).ToPointer());
@@ -55,6 +64,8 @@ cli::array<String^>^ Compiladores_Project::Manager::GetAllTokens()
 		std::vector<CToken*> VecTokens;
 		
 	}
+
+	return gcnew cli::array <String^>(1);
 	// TODO: insert return statement here
 }
 

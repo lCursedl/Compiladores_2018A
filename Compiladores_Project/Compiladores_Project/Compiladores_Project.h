@@ -6,6 +6,8 @@
 #include "ErrorModule.h"
 #include "Lexico.h"
 #include "Token.h"
+#include "Sintactico.h"
+#include "SymTab.h"
 
 using namespace System;
 
@@ -24,6 +26,8 @@ namespace Compiladores_Project {
 
 	private:
 		CLexico * Lex;
+		CSintactico * Syn;
 		CErrorModule ^ MError;
+		CSymTab * Symtab;
 	};
 }
